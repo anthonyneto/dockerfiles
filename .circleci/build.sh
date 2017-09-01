@@ -2,7 +2,7 @@
 set -euo pipefail
 
 repo=anthonyneto
-
+echo 'anything'
 files=( $(git diff "${CIRCLE_COMPARE_URL##*\/compare\/}" --name-only | xargs -r -n1 dirname | sort -u) )
 
 echo "Logging into dockerhub"
